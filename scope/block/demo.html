@@ -1,0 +1,512 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.3.2 块级作用域示例 · ES6学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jiale Zou <me@sugarat.top>">
+        <meta name="identifier" content="√" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../symbol/" />
+    
+    
+    <link rel="prev" href="let-const.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.cnblogs.com/roseAT/" target="_blank" class="custom-link">Sugar's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 块级作用域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../scopeType/">
+            
+                <a href="../scopeType/">
+            
+                    
+                    1.1 作用域分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../scopeType/overall.html">
+            
+                <a href="../scopeType/overall.html">
+            
+                    
+                    1.1.1 全局示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../scopeType/local.html">
+            
+                <a href="../scopeType/local.html">
+            
+                    
+                    1.1.2 局部示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../variablehoist/">
+            
+                <a href="../variablehoist/">
+            
+                    
+                    1.2 变量提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1.3 块级作用域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="let-const.html">
+            
+                <a href="let-const.html">
+            
+                    
+                    1.3.1 let与const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.2" data-path="demo.html">
+            
+                <a href="demo.html">
+            
+                    
+                    1.3.2 块级作用域示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../symbol/">
+            
+                <a href="../../symbol/">
+            
+                    
+                    2 数据类型Symbol
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../symbol/simple/">
+            
+                <a href="../../symbol/simple/">
+            
+                    
+                    2.1 简单的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../symbol/methods/">
+            
+                <a href="../../symbol/methods/">
+            
+                    
+                    2.2 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../symbol/attribute/">
+            
+                <a href="../../symbol/attribute/">
+            
+                    
+                    2.3 属性名的 Symbol
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../symbol/attribute/demo1.html">
+            
+                <a href="../../symbol/attribute/demo1.html">
+            
+                    
+                    2.3.1 例1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../symbol/attribute/demo2.html">
+            
+                <a href="../../symbol/attribute/demo2.html">
+            
+                    
+                    2.3.2 例2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../symbol/example/demo.html">
+            
+                <a href="../../symbol/example/demo.html">
+            
+                    
+                    2.4 使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.3.2 块级作用域示例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="132-&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x793A;&#x4F8B;">1.3.2 &#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x793A;&#x4F8B;</h1>
+<h2 id="&#x793A;&#x4F8B;1">&#x793A;&#x4F8B;1</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>){
+    <span class="hljs-keyword">var</span> a=<span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(a);<span class="hljs-comment">//10</span>
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;2">&#x793A;&#x4F8B;2</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>){
+    <span class="hljs-keyword">let</span> a=<span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(a);<span class="hljs-comment">//error: a is not defined</span>
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;3">&#x793A;&#x4F8B;3</h2>
+<pre><code class="lang-js">{
+    <span class="hljs-keyword">let</span> a=<span class="hljs-number">2</span>;
+}
+
+{
+    <span class="hljs-keyword">let</span> a=<span class="hljs-number">3</span>;
+    <span class="hljs-built_in">console</span>.log(a);<span class="hljs-comment">//3</span>
+}
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;4">&#x793A;&#x4F8B;4</h2>
+<pre><code class="lang-js">{
+    <span class="hljs-keyword">const</span> a=<span class="hljs-number">2</span>;
+    <span class="hljs-built_in">console</span>.log(a);<span class="hljs-comment">//2</span>
+    a = <span class="hljs-number">3</span>;<span class="hljs-comment">//error:&quot;a&quot; is read-only</span>
+}
+</code></pre>
+<h2 id="&#x793A;&#x4F8B;5">&#x793A;&#x4F8B;5</h2>
+<pre><code class="lang-js">{
+    <span class="hljs-keyword">const</span> obj={
+        name:<span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>,
+        age:<span class="hljs-number">18</span>
+    }
+    <span class="hljs-built_in">console</span>.log(obj);<span class="hljs-comment">//{name:&quot;&#x5C0F;&#x660E;&quot;,age:18}</span>
+    obj.name=<span class="hljs-string">&quot;&#x5C0F;&#x7EA2;&quot;</span>;
+    <span class="hljs-built_in">console</span>.log(obj);<span class="hljs-comment">//{name:&quot;&#x5C0F;&#x7EA2;&quot;,age:18}</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="let-const.html" class="navigation navigation-prev " aria-label="Previous page: 1.3.1 let与const">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../symbol/" class="navigation navigation-next " aria-label="Next page: 2 数据类型Symbol">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.3.2 块级作用域示例","level":"1.2.3.2","depth":3,"next":{"title":"2 数据类型Symbol","level":"1.3","depth":1,"path":"symbol/README.md","ref":"symbol/README.md","articles":[{"title":"2.1 简单的用法","level":"1.3.1","depth":2,"path":"symbol/simple/README.md","ref":"symbol/simple/README.md","articles":[]},{"title":"2.2 方法","level":"1.3.2","depth":2,"path":"symbol/methods/README.md","ref":"symbol/methods/README.md","articles":[]},{"title":"2.3 属性名的 Symbol","level":"1.3.3","depth":2,"path":"symbol/attribute/README.md","ref":"symbol/attribute/README.md","articles":[{"title":"2.3.1 例1","level":"1.3.3.1","depth":3,"path":"symbol/attribute/demo1.md","ref":"symbol/attribute/demo1.md","articles":[]},{"title":"2.3.2 例2","level":"1.3.3.2","depth":3,"path":"symbol/attribute/demo2.md","ref":"symbol/attribute/demo2.md","articles":[]}]},{"title":"2.4 使用场景","level":"1.3.4","depth":2,"path":"symbol/example/demo.md","ref":"symbol/example/demo.md","articles":[]}]},"previous":{"title":"1.3.1 let与const","level":"1.2.3.1","depth":3,"path":"scope/block/let-const.md","ref":"scope/block/let-const.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jiale Zou <me@sugarat.top>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"√","variables":{},"title":"ES6学习笔记","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Sugar's Blog":"https://www.cnblogs.com/roseAT/"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"scope/block/demo.md","mtime":"2019-09-06T11:54:52.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-06T11:55:07.464Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
