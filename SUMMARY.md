@@ -9,5 +9,11 @@
     * [1.3 块级作用域](scope/block/README.md)
         * [1.3.1 let与const](scope/block/let-const.md)
         * [1.3.2 块级作用域示例](scope/block/demo.md)
-* [Symbol](symbol/README.md)
+* [2 数据类型Symbol](symbol/README.md)
+    * [2.1 简单的用法](symbol/simple/README.md)
+    * [2.2 方法](symbol/methods/README.md)
+    * [2.3 属性名的 Symbol](symbol/attribute/README.md)
+        * [2.3.1 例1](symbol/attribute/demo1.md)
+        * [2.3.2 例2](symbol/attribute/demo2.md)
+    * [2.4 使用场景](symbol/example/demo.md)
 
