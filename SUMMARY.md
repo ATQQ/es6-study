@@ -43,4 +43,13 @@
         * [5.4.3 find()/findIndex() ](array/spread/methods/find.md)
         * [5.4.4 includes()/indexOf()](array/spread/methods/includes.md)
         * [5.4.5 Array.flat()](array/spread/methods/flat.md)
+* [6 对象的扩展](object/README.md)
+    * [6.1 扩展运算符](object/feature/spread.md)
+    * [6.2 新的书写方式](object/feature/write.md)
+    * [6.3 属性名的表达式](object/feature/attribute.md)
+    * [6.4 新增方法](object/feature/methods/README.md)
+        * [6.4.1 Object.is()](object/feature/methods/is.md)
+        * [6.4.2 Object.assign()](object/feature/methods/assign.md)
+        * [6.4.3 Object.keys()/values()/entries()](object/feature/methods/keys.md)
+        * [6.4.4 Object.fromEntries()](object/feature/methods/fromEntries.md)
 
