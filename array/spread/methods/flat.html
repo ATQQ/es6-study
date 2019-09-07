@@ -1,0 +1,1009 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>5.4.5 Array.flat() · ES6学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Jiale Zou <me@sugarat.top>">
+        <meta name="identifier" content="√" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../object/" />
+    
+    
+    <link rel="prev" href="includes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.cnblogs.com/roseAT/" target="_blank" class="custom-link">Sugar's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../scope/">
+            
+                <a href="../../../scope/">
+            
+                    
+                    1 块级作用域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../scope/scopeType/">
+            
+                <a href="../../../scope/scopeType/">
+            
+                    
+                    1.1 作用域分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../scope/scopeType/overall.html">
+            
+                <a href="../../../scope/scopeType/overall.html">
+            
+                    
+                    1.1.1 全局示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../scope/scopeType/local.html">
+            
+                <a href="../../../scope/scopeType/local.html">
+            
+                    
+                    1.1.2 局部示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../scope/variablehoist/">
+            
+                <a href="../../../scope/variablehoist/">
+            
+                    
+                    1.2 变量提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../scope/block/">
+            
+                <a href="../../../scope/block/">
+            
+                    
+                    1.3 块级作用域
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../scope/block/let-const.html">
+            
+                <a href="../../../scope/block/let-const.html">
+            
+                    
+                    1.3.1 let与const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../scope/block/demo.html">
+            
+                <a href="../../../scope/block/demo.html">
+            
+                    
+                    1.3.2 块级作用域示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../symbol/">
+            
+                <a href="../../../symbol/">
+            
+                    
+                    2 数据类型Symbol
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../symbol/simple/">
+            
+                <a href="../../../symbol/simple/">
+            
+                    
+                    2.1 简单的用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../symbol/methods/">
+            
+                <a href="../../../symbol/methods/">
+            
+                    
+                    2.2 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../symbol/attribute/">
+            
+                <a href="../../../symbol/attribute/">
+            
+                    
+                    2.3 属性名的 Symbol
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../symbol/attribute/demo1.html">
+            
+                <a href="../../../symbol/attribute/demo1.html">
+            
+                    
+                    2.3.1 例1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../../symbol/attribute/demo2.html">
+            
+                <a href="../../../symbol/attribute/demo2.html">
+            
+                    
+                    2.3.2 例2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../symbol/example/demo.html">
+            
+                <a href="../../../symbol/example/demo.html">
+            
+                    
+                    2.4 使用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../destructuring/">
+            
+                <a href="../../../destructuring/">
+            
+                    
+                    3 变量解构赋值
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../destructuring/array/">
+            
+                <a href="../../../destructuring/array/">
+            
+                    
+                    3.1 数组的解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../../destructuring/object/">
+            
+                <a href="../../../destructuring/object/">
+            
+                    
+                    3.2 对象的解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../../destructuring/string/">
+            
+                <a href="../../../destructuring/string/">
+            
+                    
+                    3.3 字符串的解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../../destructuring/common/demo.html">
+            
+                <a href="../../../destructuring/common/demo.html">
+            
+                    
+                    3.4 常见用途
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../string/">
+            
+                <a href="../../../string/">
+            
+                    
+                    4 字符串的扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../string/feature/Iterator.html">
+            
+                <a href="../../../string/feature/Iterator.html">
+            
+                    
+                    4.1 for of遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../string/feature/template.html">
+            
+                <a href="../../../string/feature/template.html">
+            
+                    
+                    4.2 模板字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../string/feature/method/">
+            
+                <a href="../../../string/feature/method/">
+            
+                    
+                    4.3 新增方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../../string/feature/method/includes.html">
+            
+                <a href="../../../string/feature/method/includes.html">
+            
+                    
+                    4.3.1 String.includes()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../../string/feature/method/startsWith.html">
+            
+                <a href="../../../string/feature/method/startsWith.html">
+            
+                    
+                    4.3.2 String.startsWith()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../../string/feature/method/endsWith.html">
+            
+                <a href="../../../string/feature/method/endsWith.html">
+            
+                    
+                    4.3.3 String.endsWith()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../../../string/feature/method/repeat.html">
+            
+                <a href="../../../string/feature/method/repeat.html">
+            
+                    
+                    4.3.4 String.repeat()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../../../string/feature/method/padStart.html">
+            
+                <a href="../../../string/feature/method/padStart.html">
+            
+                    
+                    4.3.5 String.padStart()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../../../string/feature/method/padEnd.html">
+            
+                <a href="../../../string/feature/method/padEnd.html">
+            
+                    
+                    4.3.6 String.padEnd()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" data-path="../../../string/feature/method/trimStart.html">
+            
+                <a href="../../../string/feature/method/trimStart.html">
+            
+                    
+                    4.3.7 String.trimStart()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.8" data-path="../../../string/feature/method/trimEnd.html">
+            
+                <a href="../../../string/feature/method/trimEnd.html">
+            
+                    
+                    4.3.8 String.trimEnd()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    5 数组的扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    5.1 扩展运算符...
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../demos.html">
+            
+                <a href="../demos.html">
+            
+                    
+                    5.2 实际运用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../apply.html">
+            
+                <a href="../apply.html">
+            
+                    
+                    5.3 替代apply
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    5.4 新增的方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="from.html">
+            
+                <a href="from.html">
+            
+                    
+                    5.4.1 Array.from
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="fill.html">
+            
+                <a href="fill.html">
+            
+                    
+                    5.4.2 Array.fill
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="find.html">
+            
+                <a href="find.html">
+            
+                    
+                    5.4.3 find()/findIndex() 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="includes.html">
+            
+                <a href="includes.html">
+            
+                    
+                    5.4.4 includes()/indexOf()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4.5" data-path="flat.html">
+            
+                <a href="flat.html">
+            
+                    
+                    5.4.5 Array.flat()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../object/">
+            
+                <a href="../../../object/">
+            
+                    
+                    6 对象的扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../object/feature/spread.html">
+            
+                <a href="../../../object/feature/spread.html">
+            
+                    
+                    6.1 扩展运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../object/feature/write.html">
+            
+                <a href="../../../object/feature/write.html">
+            
+                    
+                    6.2 新的书写方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../../object/feature/attribute.html">
+            
+                <a href="../../../object/feature/attribute.html">
+            
+                    
+                    6.3 属性名的表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../../object/feature/methods/">
+            
+                <a href="../../../object/feature/methods/">
+            
+                    
+                    6.4 新增方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../../../object/feature/methods/is.html">
+            
+                <a href="../../../object/feature/methods/is.html">
+            
+                    
+                    6.4.1 Object.is()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="../../../object/feature/methods/assign.html">
+            
+                <a href="../../../object/feature/methods/assign.html">
+            
+                    
+                    6.4.2 Object.assign()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3" data-path="../../../object/feature/methods/keys.html">
+            
+                <a href="../../../object/feature/methods/keys.html">
+            
+                    
+                    6.4.3 Object.keys()/values()/entries()
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.4" data-path="../../../object/feature/methods/fromEntries.html">
+            
+                <a href="../../../object/feature/methods/fromEntries.html">
+            
+                    
+                    6.4.4 Object.fromEntries()
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >5.4.5 Array.flat()</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="545-arrayflat">5.4.5 Array.flat()</h1>
+<blockquote>
+<p>&#x6570;&#x7EC4;&#x7684;&#x6210;&#x5458;&#x6709;&#x65F6;&#x8FD8;&#x662F;&#x6570;&#x7EC4;&#xFF0C;Array.prototype.flat()&#x7528;&#x4E8E;&#x5C06;&#x5D4C;&#x5957;&#x7684;&#x6570;&#x7EC4;&#x5C55;&#x5F00;&#xFF0C;&#x53D8;&#x6210;&#x4E00;&#x7EF4;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;&#x5BF9;&#x539F;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,[<span class="hljs-number">3</span>,<span class="hljs-number">4</span>],<span class="hljs-number">5</span>,[<span class="hljs-number">6</span>]].flat();
+<span class="hljs-comment">// [1, 2, 3, 4, 5, 6]</span>
+</code></pre>
+<blockquote>
+<p>flat()&#x9ED8;&#x8BA4;&#x53EA;&#x4F1A;&#x5C55;&#x5F00;&#x4E00;&#x5C42;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5C55;&#x5F00;&#x591A;&#x5C42;&#x7684;&#x5D4C;&#x5957;&#x6570;&#x7EC4;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;flat()&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x5199;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x8868;&#x793A;&#x60F3;&#x8981;&#x5C55;&#x5F00;&#x7684;&#x5C42;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x3002;</p>
+</blockquote>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>]]].flat()
+<span class="hljs-comment">// [1, 2, 3, [4, 5]]</span>
+
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, [<span class="hljs-number">3</span>, [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>]]].flat(<span class="hljs-number">2</span>)
+<span class="hljs-comment">// [1, 2, 3, 4, 5]</span>
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x679C;&#x4E0D;&#x7BA1;&#x6709;&#x591A;&#x5C11;&#x5C42;&#x5D4C;&#x5957;&#xFF0C;&#x90FD;&#x8981;&#x8F6C;&#x6210;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;Infinity&#x5173;&#x952E;&#x5B57;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>, [<span class="hljs-number">3</span>]]].flat(<span class="hljs-literal">Infinity</span>)
+<span class="hljs-comment">// [1, 2, 3]</span>
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x679C;&#x6709;&#x7A7A;,&#x5219;&#x4F1A;&#x81EA;&#x52A8;&#x8DF3;&#x8FC7;&#x7A7A;&#x5904;</p>
+</blockquote>
+<pre><code class="lang-js">[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,[<span class="hljs-number">5</span>]].flat();
+<span class="hljs-comment">//[1,2,3,4,5]</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="includes.html" class="navigation navigation-prev " aria-label="Previous page: 5.4.4 includes()/indexOf()">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../object/" class="navigation navigation-next " aria-label="Next page: 6 对象的扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"5.4.5 Array.flat()","level":"1.6.4.5","depth":3,"next":{"title":"6 对象的扩展","level":"1.7","depth":1,"path":"object/README.md","ref":"object/README.md","articles":[{"title":"6.1 扩展运算符","level":"1.7.1","depth":2,"path":"object/feature/spread.md","ref":"object/feature/spread.md","articles":[]},{"title":"6.2 新的书写方式","level":"1.7.2","depth":2,"path":"object/feature/write.md","ref":"object/feature/write.md","articles":[]},{"title":"6.3 属性名的表达式","level":"1.7.3","depth":2,"path":"object/feature/attribute.md","ref":"object/feature/attribute.md","articles":[]},{"title":"6.4 新增方法","level":"1.7.4","depth":2,"path":"object/feature/methods/README.md","ref":"object/feature/methods/README.md","articles":[{"title":"6.4.1 Object.is()","level":"1.7.4.1","depth":3,"path":"object/feature/methods/is.md","ref":"object/feature/methods/is.md","articles":[]},{"title":"6.4.2 Object.assign()","level":"1.7.4.2","depth":3,"path":"object/feature/methods/assign.md","ref":"object/feature/methods/assign.md","articles":[]},{"title":"6.4.3 Object.keys()/values()/entries()","level":"1.7.4.3","depth":3,"path":"object/feature/methods/keys.md","ref":"object/feature/methods/keys.md","articles":[]},{"title":"6.4.4 Object.fromEntries()","level":"1.7.4.4","depth":3,"path":"object/feature/methods/fromEntries.md","ref":"object/feature/methods/fromEntries.md","articles":[]}]}]},"previous":{"title":"5.4.4 includes()/indexOf()","level":"1.6.4.4","depth":3,"path":"array/spread/methods/includes.md","ref":"array/spread/methods/includes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-comscore":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Jiale Zou <me@sugarat.top>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"√","variables":{},"title":"ES6学习笔记","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Sugar's Blog":"https://www.cnblogs.com/roseAT/"}},"gitbook":"*","description":"This is a sample book created by gitbook","extension":null},"file":{"path":"array/spread/methods/flat.md","mtime":"2019-09-07T15:24:36.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-07T15:25:08.471Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
