@@ -16,4 +16,8 @@
         * [2.3.1 例1](symbol/attribute/demo1.md)
         * [2.3.2 例2](symbol/attribute/demo2.md)
     * [2.4 使用场景](symbol/example/demo.md)
+* [3 变量解构赋值](destructuring/README.md)
+    * [3.1 数组的解构](destructuring/array/README.md)
+    * [3.2 对象的解构](destructuring/object/README.md)
+    * [3.3 字符串的解构](destructuring/string/README.md)
 
