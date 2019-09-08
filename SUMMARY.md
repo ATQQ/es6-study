@@ -61,4 +61,9 @@
 * [9 相互转换](transfer/README.md)
     * [9.1 Array与Set](transfer/array.md)
     * [9.2 Object与Map](transfer/object.md)
+* [10 Proxy:代理](proxy/README.md)
+    * [10.1 拦截get](proxy/handler/get.md)
+    * [10.2 拦截set](proxy/handler/set.md)
+    * [10.3 拦截has](proxy/handler/has.md)
+    * [10.4 拦截deleteProperty](proxy/handler/delete.md)
 
