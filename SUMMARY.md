@@ -55,7 +55,10 @@
 * [7 Map与WeekMap](Map/README.md)
     * [7.1 Map的操作方法](Map/use/README.md)
     * [7.2 WeekMap](Map/use/WeekMap.md)
-* [8. Set与WeekSet](Set/feature/README.md)
+* [8 Set与WeekSet](Set/feature/README.md)
     * [8.1 Set的操作方法](Set/feature/set.md)
     * [8.2 WeekSet](Set/feature/weekset.md)
+* [9 相互转换](transfer/README.md)
+    * [9.1 Array与Set](transfer/array.md)
+    * [9.2 Object与Map](transfer/object.md)
 
