@@ -52,4 +52,10 @@
         * [6.4.2 Object.assign()](object/feature/methods/assign.md)
         * [6.4.3 Object.keys()/values()/entries()](object/feature/methods/keys.md)
         * [6.4.4 Object.fromEntries()](object/feature/methods/fromEntries.md)
+* [7 Map与WeekMap](Map/README.md)
+    * [7.1 Map的操作方法](Map/use/README.md)
+    * [7.2 WeekMap](Map/use/WeekMap.md)
+* [8. Set与WeekSet](Set/feature/README.md)
+    * [8.1 Set的操作方法](Set/feature/set.md)
+    * [8.2 WeekSet](Set/feature/weekset.md)
 
