@@ -68,4 +68,9 @@
     * [10.4 拦截deleteProperty](proxy/handler/delete.md)
 * [11 Reflect](reflect/README.md)
     * [11.1 示例](reflect/demos.md)
+* [12 函数的扩展](function/README.md)
+    * [12.1 参数的默认值](function/extend/defaultparam.md)
+    * [12.2 rest](function/extend/rest.md)
+    * [12.3 name属性](function/extend/name.md)
+    * [12.4 箭头函数](function/extend/arrow.md)
 
