@@ -85,4 +85,8 @@
     * [export default](module/fea/export-default.md)
     * [export与import复合](module/fea/expImp.md)
     * [按需加载](module/fea/demand-load.md)
+* [15 Promise](promise/README.md)
+    * [15.1 基本用法](promise/use/base.md)
+    * [15.2 Promise.all()](promise/use/all.md)
+    * [15.3 Promise.race()](promise/use/race.md)
 
