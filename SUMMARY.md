@@ -73,4 +73,10 @@
     * [12.2 rest](function/extend/rest.md)
     * [12.3 name属性](function/extend/name.md)
     * [12.4 箭头函数](function/extend/arrow.md)
+* [13 Class](class/README.md)
+    * [13.1 构造函数](class/fea/constructor.md)
+    * [13.2 静态方法](class/fea/staticMethod.md)
+    * [13.3 静态属性](class/fea/staticAttr.md)
+    * [13.4 gettersetter](class/fea/getSet.md)
+    * [13.5 继承](class/fea/extends.md)
 
