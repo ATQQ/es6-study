@@ -77,6 +77,12 @@
     * [13.1 构造函数](class/fea/constructor.md)
     * [13.2 静态方法](class/fea/staticMethod.md)
     * [13.3 静态属性](class/fea/staticAttr.md)
-    * [13.4 gettersetter](class/fea/getSet.md)
+    * [13.4 getter与setter](class/fea/getSet.md)
     * [13.5 继承](class/fea/extends.md)
+* [14 Module 模块](module/README.md)
+    * [export](module/fea/export.md)
+    * [import](module/fea/import.md)
+    * [export default](module/fea/export-default.md)
+    * [export与import复合](module/fea/expImp.md)
+    * [按需加载](module/fea/demand-load.md)
 

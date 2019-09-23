@@ -1,4 +1,4 @@
-# 13.4 gettersetter
+# 13.4 getter与setter
 作用跟属性拦截器类似
 ## getter
 ```js
