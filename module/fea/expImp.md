@@ -17,7 +17,7 @@ export * from "module"
 ```
 ## 具名接口改为默认接口
 ```js
-import {es6 as default} from "module";
+export {es6 as default} from "module";
 // 等同于
 import { es6 } from 'module';
 export default es6;
