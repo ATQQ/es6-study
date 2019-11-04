@@ -89,4 +89,8 @@
     * [15.1 基本用法](promise/use/base.md)
     * [15.2 Promise.all()](promise/use/all.md)
     * [15.3 Promise.race()](promise/use/race.md)
+* [16 Iterator与for..of](iterator/README.md)
+    * [16.1 Iterator使用](iterator/iterator/use/README.md)
+    * [16.2 for..of使用](iterator/forof/use/README.md)
+    * [16.3 为不包含iterator的对象扩展](iterator/prototype/README.md)
 
