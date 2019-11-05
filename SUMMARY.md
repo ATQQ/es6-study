@@ -93,4 +93,7 @@
     * [16.1 Iterator使用](iterator/iterator/use/README.md)
     * [16.2 for..of使用](iterator/forof/use/README.md)
     * [16.3 为不包含iterator的对象扩展](iterator/prototype/README.md)
+* [17 Generator函数](generator/README.md)
+    * [17.1 语法](generator/language/README.md)
+    * [17.2 异步应用](generator/async/README.md)
 
